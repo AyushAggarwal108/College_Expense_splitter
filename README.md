@@ -27,7 +27,7 @@ A modern, beginner-friendly web application that helps college students manage s
 
 ## 📁 Project Structure
 
-\`\`\`
+```
 src/
 ├── components/
 │   ├── Header/
@@ -51,7 +51,7 @@ src/
 ├── App.css
 ├── index.css
 └── main.jsx
-\`\`\`
+```
 
 
 ## 📖 How to Use
