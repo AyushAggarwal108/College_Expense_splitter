@@ -1,0 +1,95 @@
+.expense-form {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  border: 1px solid #f3f4f6;
+  height: fit-content;
+}
+
+.form-title {
+  color: #1f2937;
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.shared-by-controls {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.select-all-btn,
+.clear-all-btn {
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.members-checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  border: 1px solid #e5e7eb;
+  background: #fafafa;
+}
+
+.checkbox-label:hover {
+  background: #f3f4f6;
+  border-color: #6366f1;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #6366f1;
+}
+
+.checkbox-text {
+  font-size: 14px;
+  color: #374151;
+  font-weight: 500;
+}
+
+.selected-count {
+  font-size: 12px;
+  color: #6366f1;
+  font-weight: 600;
+  background: rgba(99, 102, 241, 0.1);
+  padding: 4px 12px;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+.submit-btn {
+  width: 100%;
+  font-size: 16px;
+  padding: 14px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .shared-by-controls {
+    flex-direction: column;
+  }
+
+  .members-checkbox-grid {
+    grid-template-columns: 1fr;
+  }
+}
